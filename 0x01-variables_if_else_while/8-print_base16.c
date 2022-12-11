@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - prints the numbers in base 16
  * Return: Always 0
