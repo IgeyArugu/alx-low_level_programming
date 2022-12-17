@@ -1,24 +1,47 @@
 #include <stdio.h>
 
 /**
- * main - print fizzbuzz
- * Rturn: Always 0
+ * main - entry point
+ *
+ * Return: void
  */
+
 int main(void)
 {
-	int n;
 
-	printf("1");
-	for (n = 2; n <= 100; n++)
-	{
-		printf("0");
-		if (n % 3 == 0)
-			printf("Fizz");
-		if (n % 5 == 0)
-			printf("Buzz");
-		if (n % 3 != 0 && n % 5 != 0)
-			printf("%d", n);
-	}
-	printf("\n");
-	return (0);
+int p = 100;
+int i;
+
+i = l;
+while (i <= p)
+{
+if (i % 3 == 0 && i % 5 == 0)
+{
+printf("FizzBuzz ");
+}
+
+else if (i % 3 == 0)
+{
+printf("Fizz ");
+}
+
+else if (i % 5 == 0)
+{
+if (i < p)
+printf("Buzz");
+
+else
+printf("Buzz");
+}
+
+else
+{
+printf("%i ", i);
+}
+
+i++;
+
+}
+printf("\n");
+return (0);
 }
