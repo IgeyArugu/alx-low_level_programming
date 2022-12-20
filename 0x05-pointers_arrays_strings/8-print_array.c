@@ -4,7 +4,7 @@
 /**
  * print_arry - prints n elements of an array
  * @a: array
- * @n: number of val to be printed
+ * @n: number of vakues to be printed
  */
 void print_array(int *a, int n)
 {
