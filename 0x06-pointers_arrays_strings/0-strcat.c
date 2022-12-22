@@ -1,11 +1,28 @@
-#include <unisrd>
+#include "main.h"
 
 /**
- * _putchar - writes the character c to stdout
- * @c: char to be printed
- * Return: 1 on succes
+ * _strcat - concatennate two strings
+ * @dest: copy to
+ * @src: copy from
+ * Return: pointer to dest
  */
-int _putchar(char c)
+char *_strat(char *dest, char *src)
 {
-	return (write(1, &c, 1));
+	int i;
+	int j;
+
+	i = 0;
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+	j = 0;
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }
